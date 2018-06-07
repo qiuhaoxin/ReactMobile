@@ -2,7 +2,7 @@ const devServer=require('webpack-dev-server');
 const webpack=require('webpack');
 const config=require('../webpackConfig/webpack.config.dev.js');
 const devServerConfig={
-	contentBase:'../src/example/public',
+	contentBase:'../src/public',
 	hot:true,
 	port:3003,
 

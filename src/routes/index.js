@@ -1,16 +1,21 @@
 import React,{Component} from 'react';
 import {HashRouter,Switch,Route,Redirect} from 'react-router-dom';
 
-const MainPage from '../pages/mainpage';
+import MainPage from '../pages/mainpage';
 
 
 class Router extends Component{
 	render(){
 		return (
            <HashRouter>
-               <Route exact path="/mainpage" component={MainPage} />
+              <Switch>
+	               <Route exact path="/mainpage" component={MainPage} />
+
+	               <Redirect to="/mainpage" />
+              </Switch>
 
            </HashRouter>
 		)
 	}
 }
+export default Router;

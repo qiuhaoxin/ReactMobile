@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Styles from './index.less';
 
 
-class MainPage extends React{
+class MainPage extends Component{
 	constructor(props){
 		super(props);
 	}
@@ -14,7 +14,7 @@ class MainPage extends React{
 	render(){
        return (
          <div className={Styles.wrapper}>
-
+             MainPage
          </div>
        )
 	}

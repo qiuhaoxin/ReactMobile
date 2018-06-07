@@ -7,7 +7,7 @@ function render(component){
        <div>
           <Router />
        </div>,
-       getElementById('root')
+       document.getElementById('root')
    	)
 }
 render(Router);
