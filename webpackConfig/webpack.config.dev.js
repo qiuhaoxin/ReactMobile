@@ -27,6 +27,7 @@ module.exports={
 		rules:[
            {
            	  test:/\.(png|jpe?g|gif|svg)$/,
+              exclude:[/node_modules/],
            	  use:[
                  {
                  	loader:'url-loader',
@@ -98,6 +99,7 @@ module.exports={
               //)
            },{
               test:/\.less$/,
+              include:path.resolve(__dirname,'../src'),
               use: [
                     require.resolve('style-loader'),
                     {
