@@ -2,6 +2,7 @@ const webpack=require('webpack');
 const path=require('path');
 const HtmlWebpackPlugin=require('html-webpack-plugin');
 const paths=require('./paths');
+const OpenBrowser=require('open-browser-webpack-plugin');
 
 /*
 * postcss
@@ -171,6 +172,7 @@ module.exports={
           inject:true,
           title:'devServer',
        }),
+       new OpenBrowser({url:'http://localhost:3004'}),
        new webpack.NamedModulesPlugin(),
        new webpack.HotModuleReplacementPlugin(),//HotModuleReplacementPlugin
   ]
