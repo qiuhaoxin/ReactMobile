@@ -44,6 +44,9 @@ class MainPage extends Component{
              <TabPage
                 slavePage={this.handleRenderSlavePage}
              >
+                 <div>
+
+                 </div>
                  <Loading visible={showLoading} desc={'加载中 ...'}/>
              </TabPage>
          </div>
